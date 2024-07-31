@@ -1,5 +1,5 @@
 import axios from 'axios'
-const BASE_URL = 'http://localhost:3001/api/notes'
+const BASE_URL = 'http://localhost:3001/api/notes' || process.env.BASE_URL
 
 const getAll = () => {
   return axios.get(BASE_URL)
